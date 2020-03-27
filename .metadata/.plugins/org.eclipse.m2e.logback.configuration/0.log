@@ -1,0 +1,10 @@
+2020-03-27 16:41:28,144 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-03-27 16:42:35,818 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ohnochat.main:main:0.0.1-SNAPSHOT @ C:\Users\fasts\Documents\GitHub\ohnochat\main\pom.xml.
+2020-03-27 16:42:37,314 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /main/src/main/java
+2020-03-27 16:42:37,320 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /main/src/main/resources
+2020-03-27 16:42:37,321 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /main/src/test/java
+2020-03-27 16:42:37,322 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /main/src/test/resources
+2020-03-27 16:42:39,940 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-03-27 16:42:39,997 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-03-27 16:42:40,004 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-03-27 16:42:40,022 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
