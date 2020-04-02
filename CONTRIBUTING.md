@@ -21,6 +21,8 @@ No need to sign any agreement.
 For anything that is bigger than a couple lines of code fix, 
 1. Fork, 
 2. Do the changes in your fork,
+### important
+4. Make sure they pass all checks including, codefactor, and travis ci, without editing the .travis.yml or the pom.xml (EXCEPTIONS CAN BE MADE)
 3. Create PR and specifying why it should be merged and what it brings to the table
 
 # Security and bugs
