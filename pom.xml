@@ -3,7 +3,10 @@
   <groupId>com.ohnochat.main</groupId>
   <artifactId>main</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <plugins><plugin>
+  <build>
+
+		<plugins>
+			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
 				<version>0.8.2</version>
@@ -22,5 +25,8 @@
 					</execution>
 				</executions>
 			</plugin>
-  </plugins>
+		</plugins>
+	</build>
+
+</project>
 </project>
