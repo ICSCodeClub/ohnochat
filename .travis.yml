@@ -1,8 +1,7 @@
 language: java
 before_install:
  - sudo apt-get install openjdk-8-jdk-headless -y
- script:
- - javac main.src.main.java.OhnoChat.java
+ 
 before_deploy:
  - git config --local user.name "gitcloneguy"
 deploy:
