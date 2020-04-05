@@ -1,6 +1,6 @@
 language: java
 script:
  - mvn test -B
- - mvn clean verify -P all-tests
+ - mvn clean test
 after_success:
   - bash <(curl -s https://codecov.io/bash)
