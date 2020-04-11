@@ -1,5 +1,6 @@
 package main.src.main;
 
+@test
 public class EchoServer extends Server {
 
 	public EchoServer(int port) {
