@@ -10,5 +10,3 @@ deploy:
     secure: "<encrypted-token>"
  file: 'OhnoChat.jar'
  skip_cleanup: true
-  on:
-    tags: false
