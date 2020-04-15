@@ -1,3 +1,14 @@
 language: java
 script:
  - mvn package
+ - javac OhnoChat.java
+before_deploy: 
+ - git config --local user.name "gitcloneguy"
+deploy:
+ provider: releases
+ api_key:
+    secure: "<encrypted-token>"
+ file: 'OhnoChat.jar'
+ skip_cleanup: true
+  on:
+    tags: false
