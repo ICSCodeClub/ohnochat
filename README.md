@@ -6,7 +6,7 @@ OhnoChat is a heavy work in progress chatting system. it hopes to see slider bar
 # whats coming:
 
 bye, travis. hello jenkins
-i still need to find how to make it work like travis in that it shows checks
+
 i think i got it working now yes it should work like gitcloneguy now
   
  
