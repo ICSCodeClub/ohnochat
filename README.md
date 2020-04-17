@@ -8,3 +8,4 @@ OhnoChat is a heavy work in progress chatting system. it hopes to see slider bar
 bye, travis. hello jenkins
 i still need to find how to make it work like travis in that it shows checks
   
+ 
