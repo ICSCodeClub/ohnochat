@@ -1,5 +1,5 @@
 # overview
-Thanks for even trying to contribute to ohnochat.
+Thanks for even trying to contribute to OhnoChat.
 Using this guide will help you get more chances (despite them already being large enough) for your pr to get merged.
 By using this it will let the managing developers get more time to be able to look over pr's
 
