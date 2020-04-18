@@ -7,5 +7,6 @@ OhnoChat is a heavy work in progress chatting system. it hopes to see slider bar
 
 bye, travis. hello jenkins
 JENKINS IS NOW LIVE!
+is going to be branded as "ohno CI"
   
  
