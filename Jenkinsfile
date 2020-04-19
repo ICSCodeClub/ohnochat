@@ -1,7 +1,7 @@
 pipeline { 
     agent any
     tools { 
-        mvn '3.3.9' 
+        maven '3.3.9' 
         jdk 'null'
     }
     stages { 
