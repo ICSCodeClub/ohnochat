@@ -1,8 +1,8 @@
 pipeline { 
     agent any
     tools { 
-        maven 'mvn 3.3.9' 
-        jdk 'null' 
+        mvn '3.3.9' 
+        jdk 'null'
     }
     stages { 
         stage('test') { 
