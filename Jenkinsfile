@@ -1,8 +1,5 @@
 pipeline { 
     agent any
-    environment {
-        CODECOV_TOKEN = '5521a705-1363-4ec7-bcb2-6e4c748edb26'
-   }
     stages { 
         stage('clean up before build') {
             steps {
@@ -23,8 +20,7 @@ pipeline {
         stage ("Extract test results") {
             steps{
             cobertura coberturaReportFile: 'coverage.xml'
-            export CODECOV_TOKEN="5521a705-1363-4ec7-bcb2-6e4c748edb26
-            sh bash <(curl -s https://codecov.io/bash)
+            sh bash <(curl -s https://codecov.io/bash) -t 5521a705-1363-4ec7-bcb2-6e4c748edb26
                       }
 }
     
