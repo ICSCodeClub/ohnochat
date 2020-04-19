@@ -3,23 +3,23 @@
   <groupId>com.ohnochat.main</groupId>
   <artifactId>main</artifactId>
   <version>0.0.1-SNAPSHOT</version> 
-  <plugin>  
-            <groupId>org.codehaus.mojo</groupId>  
-            <artifactId>cobertura-maven-plugin</artifactId>  
-            <version>2.5.2</version>  
-            <configuration>  
-                <formats>  
-                    <format>xml</format>  
-                </formats>  
-            </configuration>  
-            <executions>  
-                <execution>  
-                    <phase>package</phase>  
-                    <goals>  
-                        <goal>cobertura</goal>  
-                    </goals>  
-                </execution>  
-            </executions>  
-   </plugin>         
+   <plugin>  
+     <groupId>org.codehaus.mojo</groupId>  
+     <artifactId>cobertura-maven-plugin</artifactId>  
+     <version>2.5.2</version>  
+      <configuration>  
+       <formats>  
+         <format>xml</format>  
+        </formats>  
+        </configuration>  
+         <executions>  
+           <execution>  
+            <phase>package</phase>  
+              <goals>  
+              <goal>cobertura</goal>  
+               </goals>  
+            </execution>  
+           </executions>  
+         </plugin>         
 </project>
 
