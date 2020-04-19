@@ -1,5 +1,5 @@
 pipeline { 
-    agent ('master')
+    agent any
     stages { 
         stage('test') { 
             steps { 
@@ -12,4 +12,7 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            deleteDir() /* clean up our workspace */
 }
