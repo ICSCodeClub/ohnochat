@@ -1,5 +1,8 @@
 pipeline { 
     agent any
+    environment {
+        CODECOV_TOKEN = '5521a705-1363-4ec7-bcb2-6e4c748edb26'
+   }
     stages { 
         stage('clean up before build') {
             steps {
