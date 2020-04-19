@@ -17,10 +17,15 @@ pipeline {
                '''
             }
         }
-        stage ("Extract test results") {
+        stage ("Extract test results and send to codecov") {
             steps{
             cobertura coberturaReportFile: 'coverage.xml'
-            sh curl -s https://codecov.io/bash | bash -t 5521a705-1363-4ec7-bcb2-6e4c748edb26 -f coverage.xml
+            sh '''
+            git clone https://github.com/gitcloneguy/codecov-jenkins.git
+            cd codecov-jenkins
+            sudo chmod +x yes.sh
+            sudo ./yes.sh
+            '''
                       }
 }
     
