@@ -13,18 +13,12 @@ pipeline {
                git clone https://github.com/gitcloneguy/ohnochat.git
                cd ohnochat
                mvn install -Dmaven.javadoc.skip=true -B -V
-               mvn package
+               mvn package clean
                '''
             }
         }
 
-        stage ("create coverage") {
-            steps{
-            sh '''
-            mvn cobertura:cobertura -Dcobertura.report.format=xml
-            '''
-                      }
-}
+        
     
     }
 
