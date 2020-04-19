@@ -17,6 +17,11 @@ pipeline {
                '''
             }
         }
+        stage ("Extract test results") {
+    cobertura coberturaReportFile: 'coverage.xml'
+            export CODECOV_TOKEN="5521a705-1363-4ec7-bcb2-6e4c748edb26
+            sh bash <(curl -s https://codecov.io/bash)
+}
     
     }
 }
