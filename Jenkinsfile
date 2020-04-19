@@ -17,16 +17,4 @@ pipeline {
                '''
             }
         }
-        stage ("Extract test results and send to codecov") {
-            steps{
-            sh '''
-            git clone https://github.com/gitcloneguy/codecov-jenkins.git
-            cd codecov-jenkins
-            sudo chmod +x yes.sh
-            sudo ./yes.sh
-            '''
-                      }
-}
-    
-    }
 }
