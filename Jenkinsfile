@@ -20,7 +20,7 @@ pipeline {
         stage ("Extract test results") {
             steps{
             cobertura coberturaReportFile: 'coverage.xml'
-            sh bash <(curl -s https://codecov.io/bash) -t 5521a705-1363-4ec7-bcb2-6e4c748edb26
+            sh curl -s https://codecov.io/bash | bash -t 5521a705-1363-4ec7-bcb2-6e4c748edb26 -f coverage.xml
                       }
 }
     
