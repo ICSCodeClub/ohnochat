@@ -1,6 +1,6 @@
-package main.src.main;
+package ohnochat;
 
-@test
+
 public class EchoServer extends Server {
 
 	public EchoServer(int port) {
