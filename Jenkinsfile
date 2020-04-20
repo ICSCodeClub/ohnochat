@@ -12,8 +12,8 @@ pipeline {
                sh '''
                git clone https://github.com/gitcloneguy/ohnochat.git
                cd ohnochat
-               mvn install -Dmaven.javadoc.skip=true -B -V
-               mvn package clean
+               mvn clean install site
+               mvn clean package
                '''
             }
         }
