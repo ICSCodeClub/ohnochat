@@ -1,4 +1,4 @@
-package main.src.main;
+package ohnochat;
 
 
 import java.io.BufferedReader;
