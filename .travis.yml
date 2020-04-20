@@ -1,4 +1,4 @@
 language: java
 script:
 - mvn clean package
-- mvn test -Dtest=DesignRulesTest
+- mvn test
