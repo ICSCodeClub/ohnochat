@@ -1,2 +1,0 @@
-INDEX VERSION 1.130+C:\Users\fasts\Documents\GitHub\ohnochat\.metadata\.plugins\org.eclipse.jdt.core
-2779629487.index
