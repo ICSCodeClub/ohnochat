@@ -9,7 +9,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
-@Test
+
 public abstract class Server extends Thread{	
 	private ArrayList<Client> clients;
 	private ArrayList<String> messages;

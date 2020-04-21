@@ -1,6 +1,5 @@
 package ohnochat;
 
-@Test
 public class EchoServer extends Server {
 
 	public EchoServer(int port) {
