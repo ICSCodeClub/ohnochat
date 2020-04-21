@@ -41,6 +41,9 @@ public class SocketListener {
 	
 	public void close() {
 		issl.active = false;
+		try {
+			sock.close();
+		} catch (IOException e) {}
 	}
 	
 	

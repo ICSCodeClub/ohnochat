@@ -2,6 +2,7 @@ package ohnochat.utils;
 
 
 import java.io.BufferedReader;
+import java.io.Closeable;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
@@ -10,7 +11,7 @@ import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Server extends Thread{	
+public abstract class Server extends Thread implements Closeable{	
 	private ArrayList<Client> clients;
 	private ArrayList<String> messages;
 	private final int port;
@@ -33,7 +34,7 @@ public abstract class Server extends Thread{
 			newCon = new ServerSocket(port);
 		} catch (IOException e) {
 			e.printStackTrace();
-			kill();
+			close();
 		}
 		while(active) {
 			try {
@@ -46,7 +47,7 @@ public abstract class Server extends Thread{
 			}
 		}
 	}
-	public void kill() {
+	public void close() {
 		active = false;
 		for(Client c : clients)
 			c.kill();

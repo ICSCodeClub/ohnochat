@@ -1,11 +1,10 @@
 package ohnochat;
 
-import java.util.concurrent.TimeUnit;
 import java.io.IOException;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-import ohnochat.EchoServer;
+import ohnochat.utils.EchoServer;
 import ohnochat.utils.MessageRecievedListener;
 import ohnochat.utils.MessageSentListener;
 import ohnochat.utils.SocketListener;
@@ -24,7 +23,7 @@ public class Test {
 			}
 		});
 		
-		//you can even listen for sent messages
+		//you can even listen for sent messages (but it only triggers if you send via this class)
 		sl.addMessageSentListener(new MessageSentListener() {
 			public void onMessageSent(String msg) {
 				System.out.println("Sent Message: "+msg);
@@ -32,9 +31,13 @@ public class Test {
 		});
 		
 		//sleep
-		TimeUnit.NANOSECONDS.sleep(1500);
+		Thread.sleep(1500);
 		
 		//send an example message. NOTE THAT you do not recieve messages you send with the EchoServer
 		sl.send("Who is joe");
+		
+		//close everything
+		sl.close();
+		client.close();
 	}
 }
