@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-import ohnochat.utils.EchoServer;
+import ohnochat.EchoServer;
 import ohnochat.utils.MessageRecievedListener;
 import ohnochat.utils.MessageSentListener;
 import ohnochat.utils.SocketListener;
