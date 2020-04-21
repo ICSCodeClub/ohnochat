@@ -3,8 +3,6 @@ package ohnochat;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.BufferedReader;
-import org.junit.Ignore;
-import org.junit.Test;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.InetAddress;
@@ -21,7 +19,7 @@ import javax.swing.border.EtchedBorder;
 
 import ohnochat.utils.EchoServer;
 
-@org.junit.Test
+
 public class OhnoChat extends javax.swing.JFrame {
 	private static final long serialVersionUID = 1L;
 	ServerSocket ss;
