@@ -26,7 +26,7 @@ import ohnochat.utils.EchoServer;
 import ohnochat.utils.MessageRecievedListener;
 import ohnochat.utils.SocketListener;
 
-//hooolllyy shiiit OhnoChat was soooo baaaad i need to rewrite it
+//hooolllyy shiiit OhnoChat was soooo baaaad i need to rewrite it no u
 public class OhnoChatTheRewrite implements Closeable{
 	private JFrame frmOhnochat;
 	private JTextField typedMessage;
@@ -60,12 +60,14 @@ public class OhnoChatTheRewrite implements Closeable{
 			//check ip
 			try {InetAddress.getByName(ip);}
 			catch(UnknownHostException e) {
-				JOptionPane.showMessageDialog(null,"Invalid or Unreachable IP");
+				JOptionPane.showMessageDialog(null,"Invalid or Unreachable IP. oOf imagine being so bad.");
 				return;
 			}
 		}
-		int port = 6969; //haha, it never gets old
-		try {port = Integer.parseInt(JOptionPane.showInputDialog("Please enter the port number"));}
+		int port = 6969; //haha, it never gets old haha lmao lfmao xD lol noob rekt kid epic epicgamer69
+		try {
+			port = Integer.parseInt(JOptionPane.showInputDialog("Please enter the port number"));
+		}
 		catch(NumberFormatException e) {
 			JOptionPane.showMessageDialog(null,"Enter a real port next time, retard");
 			return;
@@ -85,7 +87,9 @@ public class OhnoChatTheRewrite implements Closeable{
 		if(isServer) server = new EchoServer(port);
 		
 		sl = SocketListener.fromNewSocket(ip, port);
-		if(sl == null) {JOptionPane.showMessageDialog(null,"Hey man, how about giving me a *valid* ip+port? Thx"); return;}
+		if(sl == null) {
+			JOptionPane.showMessageDialog(null,"Hey man, how about giving me a *valid* ip+port? Thx"); return;
+		}
 		
 		//add the incoming message listener
 		sl.addMessageRecievedListener(new MessageRecievedListener() {
