@@ -18,7 +18,7 @@ import javax.swing.WindowConstants;
 import javax.swing.border.EtchedBorder;
 
 import ohnochat.utils.EchoServer;
-@Test
+
 public class OhnoChat extends javax.swing.JFrame {
 	private static final long serialVersionUID = 1L;
 	ServerSocket ss;
@@ -98,7 +98,7 @@ public class OhnoChat extends javax.swing.JFrame {
 			try{
 				if(HorC) {
 					try {
-					String port=JOptionPane.showInputDialog("Please enter the port number");
+					String port=JOptionPane.showInputDialog("Please enter the port number that you want to host the server on.");
 					int i = Integer.parseInt(port);
 					messages.setText("Waiting for an incoming connection.\nEnter my ip at client side.\nMy ip: "+InetAddress.getLocalHost().getHostAddress()+"\nPort that must be opened if clients arent on your local network is "+i); 
 					new EchoServer(i);
