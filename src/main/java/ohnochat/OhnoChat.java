@@ -19,6 +19,7 @@ import javax.swing.border.EtchedBorder;
 
 import ohnochat.utils.EchoServer;
 
+
 public class OhnoChat extends javax.swing.JFrame {
 	private static final long serialVersionUID = 1L;
 	ServerSocket ss;
@@ -49,13 +50,13 @@ public class OhnoChat extends javax.swing.JFrame {
         send.setText("Send");
         send.setSize(60,30);
      
-	     add(messages);
-	     messages.setEditable(false);
-	     messages.setBorder(new EtchedBorder());
-	     messages.setLocation(5,text.getHeight()+text.getY()+5);
-	     messages.setSize(getWidth()-30,getHeight()-text.getY()-text.getHeight()-50);
+	    add(messages);
+	    messages.setEditable(false);
+	    messages.setBorder(new EtchedBorder());
+	    messages.setLocation(5,text.getHeight()+text.getY()+5);
+	    messages.setSize(getWidth()-30,getHeight()-text.getY()-text.getHeight()-50);
 	        
-		 al=new ActionListener() {
+		al=new ActionListener() {
 			 public void actionPerformed(ActionEvent e) {
 				 ready2send=true;
 			 }
@@ -71,7 +72,7 @@ public class OhnoChat extends javax.swing.JFrame {
 		 Messenger.start();      
 	 }
 	      
-	    
+    @org.junit.jupiter.api.Test
 	    public static void main(String args[]) { 
 	    	int inp=JOptionPane.showConfirmDialog(null,"Do you want to host the chat?\nYes - Act as server\nNo - Act as client","Want to host a chat?",JOptionPane.YES_NO_OPTION);
 	        if(inp==0) {
@@ -98,7 +99,7 @@ public class OhnoChat extends javax.swing.JFrame {
 			try{
 				if(HorC) {
 					try {
-					String port=JOptionPane.showInputDialog("Please enter the port number that you want to host the server on.");
+					String port=JOptionPane.showInputDialog("Please enter the port number");
 					int i = Integer.parseInt(port);
 					messages.setText("Waiting for an incoming connection.\nEnter my ip at client side.\nMy ip: "+InetAddress.getLocalHost().getHostAddress()+"\nPort that must be opened if clients arent on your local network is "+i); 
 					new EchoServer(i);

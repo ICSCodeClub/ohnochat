@@ -6,6 +6,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.net.UnknownHostException;
 import java.util.ArrayList;
 
 public class SocketListener {
@@ -73,14 +74,23 @@ public class SocketListener {
 		@Override
 		public void run() {
 			try {Thread.sleep(220);} catch(Exception e) {}
-			while(active) {
+			while(active && br != null) {
 				try {
 					String line = br.readLine();
-					onMessageRecieved(line);
-				} catch (IOException e) { 
-					e.printStackTrace();
-				}
+					if(line != null && !line.isBlank() && !line.equalsIgnoreCase("null"));
+						onMessageRecieved(line);
+				} catch (IOException e) {}
 			}
+		}
+	}
+	
+	public static SocketListener fromNewSocket(String ip, int port) {
+		try {
+			return new SocketListener(new Socket(ip, port));
+		} catch (UnknownHostException e1) {
+			return null;
+		} catch (IOException e1) {
+			return null;
 		}
 	}
 }
