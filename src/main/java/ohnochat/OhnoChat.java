@@ -17,6 +17,8 @@ import javax.swing.JTextField;
 import javax.swing.WindowConstants;
 import javax.swing.border.EtchedBorder;
 
+import ohnochat.utils.EchoServer;
+
 public class OhnoChat extends javax.swing.JFrame {
 	private static final long serialVersionUID = 1L;
 	ServerSocket ss;
