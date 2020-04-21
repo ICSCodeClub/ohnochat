@@ -31,7 +31,7 @@ public class Test {
 		});
 		
 		//sleep
-		Thread.sleep(1500);
+		TimeUnit.NANOSECONDS.sleep(1500);
 		
 		//send an example message. NOTE THAT you do not recieve messages you send with the EchoServer
 		sl.send("Who is joe");
