@@ -55,7 +55,6 @@ public abstract class Server extends Thread{
 	public void addToMessages(Client origin, String msg) {
 		messages.add(msg);
 		onMessageRecieved(origin, msg);
-		System.out.println(msg);
 	}
 	public List<Client> getClients(){
 		return clients;
