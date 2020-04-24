@@ -9,4 +9,4 @@ OhnoChat is a heavy work in progress chatting system. it hopes to see slider bar
 
 # How to use:
 
-can be compiled from any platform with maven support. install maven, then go into the folder, then from the command line run ```mvn package``` go into the target folder, than run the jar: ```ohnochat-with-dependencies.jar```
+can be compiled from any platform with maven support. install maven, then go into the folder, then from the command line run ```mvn install``` go into the target folder, than run the jar: ```ohnochat-with-dependencies.jar```
