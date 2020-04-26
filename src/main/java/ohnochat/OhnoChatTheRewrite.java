@@ -88,7 +88,8 @@ public class OhnoChatTheRewrite implements Closeable{
 		
 		sl = SocketListener.fromNewSocket(ip, port);
 		if(sl == null) {
-			JOptionPane.showMessageDialog(null,"Hey man, how about giving me a *valid* ip+port? Thx"); return;
+			JOptionPane.showMessageDialog(null,"Hey man, how about giving me a *valid* ip+port? Thx");
+			return;
 		}
 		
 		//add the incoming message listener
