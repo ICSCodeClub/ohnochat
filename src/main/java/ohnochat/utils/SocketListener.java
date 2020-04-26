@@ -77,7 +77,7 @@ public class SocketListener {
 			while(active && br != null) {
 				try {
 					String line = br.readLine();
-					if(line != null && !line.isBlank() && !line.equalsIgnoreCase("null"));
+					if(line != null && !line.isBlank() && !line.equalsIgnoreCase("null"))
 						onMessageRecieved(line);
 				} catch (IOException e) {}
 			}
