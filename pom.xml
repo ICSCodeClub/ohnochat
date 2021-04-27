@@ -37,7 +37,7 @@
             </descriptorRefs>
             <archive>
               <manifest>
-                <mainClass>ohnoChat.OhnoChatTheRewrite</mainClass>
+                <mainClass>ohnoChat.OhnoChat</mainClass>
               </manifest>
             </archive>
           </configuration>
